@@ -10,5 +10,5 @@ class Layout extends React.Component {
 
 }
 
-const app = document.getElementById('JS REACT');
+const app = document.getElementById('app');
 ReactDom.render(<Layout/>,app);
