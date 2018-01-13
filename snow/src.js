@@ -8,7 +8,7 @@ class Flake{
     }
     render(){
         stroke(255);
-        strokeWeight(40);
+        strokeWeight(4);
         point(this.position.x,this.position.y);
     }
 }
@@ -20,7 +20,7 @@ function setup(){
 function draw(){
     snow.push(new Flake());
     background(0);
-    for(z =0;z<snow.lenth;z++){
-        snow[z].render();
+    for(fl of snow){
+        fl.render();
     }
 }
