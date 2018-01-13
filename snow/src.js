@@ -1,5 +1,3 @@
-var canv = document.getElementById("canvas");
-var ctx = canv.getContext("2d");
 class Flake{
     constructor(){
         this.position = createVector();
@@ -19,7 +17,7 @@ function setup(){
 }
 function draw(){
     background(0);
-    for(fl of snow){
-        fl.render();
+    for(let z =0;z<snow.lenth;z++){
+        snow[z].render();
     }
 }
