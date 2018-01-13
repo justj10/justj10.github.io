@@ -14,7 +14,8 @@ class Flake{
 }
 let snow=[];
 function setup(){
-    snow.push(new flake())
+    createCanvas(windowWidth,windowHeight);
+    snow.push(new Flake());
 }
 function draw(){
     background(0);
