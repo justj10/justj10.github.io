@@ -1,6 +1,7 @@
 class Flake{
     constructor(){
-        this.position = createVector();
+        let x = random(width),y = random(height);
+        this.position = createVector(x,y);
         this.velocity = createVector();
         this.acceleration = createVector();
     }
