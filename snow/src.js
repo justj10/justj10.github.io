@@ -15,10 +15,9 @@ class Flake{
 let snow=[];
 function setup(){
     createCanvas(windowWidth,windowHeight);
-    
+    snow.push(new Flake());
 }
 function draw(){
-    snow.push(new Flake());
     background(0);
     for(fl of snow){
         fl.render();
