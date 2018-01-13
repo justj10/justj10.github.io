@@ -1,3 +1,4 @@
+let z;
 class Flake{
     constructor(){
         let x = random(width),y = random(height);
@@ -14,11 +15,12 @@ class Flake{
 let snow=[];
 function setup(){
     createCanvas(windowWidth,windowHeight);
-    snow.push(new Flake());
+    
 }
 function draw(){
+    snow.push(new Flake());
     background(0);
-    for(let z =0;z<snow.lenth;z++){
+    for(z =0;z<snow.lenth;z++){
         snow[z].render();
     }
 }
