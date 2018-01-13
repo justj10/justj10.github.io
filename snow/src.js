@@ -23,7 +23,7 @@ function draw(){
     background(0);
     snow.push(new Flake());
     for(fl of snow){
-        flake.update();
+        fl.update();
         fl.render();
     }
 }
