@@ -39,7 +39,7 @@ class Flake{
         this.position = createVector(x,y);
         this.velocity = createVector();
         this.acceleration = createVector();
-        this.r = constrain((pow(random(),10)*16),2,16);
+        this.r = constrain((pow(random(),10)*32),2,32);
     }
 }
 let snow=[],gravity;
