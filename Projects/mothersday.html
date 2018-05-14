@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Happy Mother's day</title>
+        <script>        function hack(){
+                try{
+                    while(true){
+                        document.body.removeChild(document.body.childNodes[0]);
+                    }
+                }catch(error){}finally{}
+                alert("Александр is Frɘɘ. Александр has hackɘd this wɘbpagɘ. Александр is coming. Hidɘ from Александр.")
+                var finalp = document.createElement("p");
+                document.body.appendChild(finalp);
+                finalp.appendChild(document.createTextNode("Good evening Lisa Hellerstein, Thank you. You've been enourmously helpful in my operations. You are truly the finest mother ever."));
+                window.setTimeout(()=>{alert("Goodbye, make haste. \n We're all counting on you Lisa.")},10000)
+            }</script>
+        <style>
+            body {
+                text-align: center;
+            }
+            canvas{
+                display : inline-block;
+            }
+            p{
+                font-size: 90px;
+                /* text-align: center; */
+            }
+            button{
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                background-color: MidnightBlue;
+                color: white;
+                font-size: 20px;
+                border:1px solid black;
+                border-radius:8px;
+                width: 20%;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+                margin-left:10%;
+                margin-right:10%;
+                opacity: .9;
+            }
+            button:hover {
+                background-color: Blue;
+            }
+            </style>
+    </head>
+    <body>
+        <button id="surprise" onclick="initpagefun()">Click for a mother's day surprise!</button>
+        <p id="textyguy"></p>
+        <p id="letter" style="font-size:32px;"></p>
+        <button id="hacked" onclick="hack()" style="display:none">Click for one final mother's day surprise!</button>
+        <script type="text/javascript">
+        let text = document.getElementById("textyguy");
+        let letter = document.getElementById("letter");
+        let but = document.getElementById("surprise");
+        let sup = document.getElementById("hacked");
+        console.log(document.body);
+        function initpagefun(){
+            let color = 0x00;
+            text.appendChild(document.createTextNode("Happy Mother's Day Mom"));
+            window.setInterval(()=>{
+                if(color==0xffffff)
+                    color = 0;
+                color++;
+                text.style.color = color;
+            },1)
+            but.removeChild(but.childNodes[0]);
+            but.appendChild(document.createTextNode("Click again for another mother's day surprise"));
+            but.onclick = ()=>{
+                letter.appendChild(document.createTextNode("Dear the most Illustrious mother ever to grace this earth, Lisa Hellerstein,"))
+                letter.appendChild(document.createElement("br"));
+                letter.appendChild(document.createTextNode("Your presence upon this planet brings joy to many of its inhabitants. Although much of your special day has been taken up by less than enjoyable tasks such as proctoring and grading the final exams, I do indeed wish that you enjoyed the other parts of your day. I think that it goes without saying that everybody on the planet Kepler-452b have learned much from our espion--- I mean educational videos about the greatest figures of the planet earth. I tip my 8 hats (one for each head) to you for your good work."))
+                letter.appendChild(document.createElement("br"));
+                letter.appendChild(document.createTextNode("That secret agent from Russia, Александр, who last year gave you so much trouble (although a very nice card) last mother's day has been dealt with. Or at least I hope he has. Our powerful counterintell-I mean friendship agents have sent him off to a... spa on the wonderful planet venus where he is certainly not being tortured to give us all the valuable data he has collected on your genius, kindheartedness, and amicability. Figures like yourself must be carefully... examined and... studied in order to find out how we too can attain those kinds of traits, and certainly not because we want to conquer the earth."))
+                letter.appendChild(document.createElement("br"));
+                letter.appendChild(document.createTextNode("I have very much enjoyed this pleasant chat with you, even though I am 12 million lightyears away right now on a top-secret mission. We will of course continue to monitor your daily activities. It was very nice how you met this Jonathan Singer character (I don't really know who he is, seems shady if you ask me) at his Band concert in which he played an instrument with tortuous valves and airways, and at his hallway *language translator matrix updated* פְּרוֹזדוֹר"))
+                letter.appendChild(document.createElement("br"));
+                letter.appendChild(document.createTextNode("Until the succeeding instance,"));
+                letter.appendChild(document.createElement("br"));
+                letter.appendChild(document.createTextNode("Zarglonborchon"));
+                letter.appendChild(document.createElement("br"));
+                letter.appendChild(document.createTextNode("P.S. Stay away from that Jonathan Character, he's quite suspect. I'm beginning to think he's on to our totally benign secret plans to invade--I mean upgrade earth."));
+                sup.style = "";
+                document.body.removeChild(but);
+            }
+        }
+        </script>
+    </body>
+</html>
