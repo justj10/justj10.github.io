@@ -1,18 +1,37 @@
 <html>
   <head>
     <title>How Rich is Jay Gatsby</title>
-    <style>canvas{height:1;width:1;background-color:green;}</style>
+    <style>canvas{height:1;width:1}</style>
   </head>
   <script>
+    let color = "green";
     let body = document.getElementByID('b');
     let p = document.getElementById('p');
     p.innerHTML = "Each pixel represents $1.";
+    let monies = 0;
+    let moneyinc = 1;
     window.setInterval(()=>{
-      body.appendChild(document.createElement("canvas"));
-      
+      let c = document.createElement("canvas");
+      c.style.backgroundColor = color;
+      body.appendChild(c);
+      if(monies/moneyinc>=1000){
+        switch(moneyinc){
+          case 1:
+            moneyinc = 10;
+            color = "lime";
+            break;
+          case 10:
+            moneyinc = 10;
+            color = "blue";
+            break;
+          default:
+            break;
+        }
+      }
     },1);
   </script>
-  <body id="b">
+  <body>
+    <div id="b"></div>
     <p id="p"></p>
   </body>
 </html>
