@@ -15,12 +15,10 @@
     let monies = 0;
     let moneyinc = 1;
     window.setInterval(()=>{
-      for(let i = 0;i<100;i++){
         let c = document.createElement("canvas");
         c.style.backgroundColor = color;
         body.appendChild(c);
         monies+= moneyinc;
-      }
       if(monies/moneyinc>=1000){
         switch(moneyinc){
           case 1:
