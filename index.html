@@ -5,7 +5,7 @@
   </head>
   <script>
     let body = document.getElementByID('b');
-    let p = document.getElementByID('p');
+    let p = document.getElementById('p');
     p.innerHTML = "Each pixel represents $1.";
     window.setInterval(()=>{
       body.appendChild(document.createElement("canvas"));
