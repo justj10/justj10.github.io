@@ -14,22 +14,19 @@
       let c = document.createElement("canvas");
       c.style.backgroundColor = color;
       body.appendChild(c);
-      if(monies/moneyinc>=1000){
+      if(monies/moneyinc>=10000){
         switch(moneyinc){
           case 1:
             moneyinc = 10;
             color = "lime";
             break;
           case 10:
+            p.innerHTML = "Blue pixels are 100 dollars each";
             moneyinc = 100;
             color = "blue";
             break;
           case 100:
-            moneyinc = 1000;
-            color = "yellow";
-            break;
-          case 1000:
-            p.innerhtml = "that's a billion dollars";
+            p.innerHTML = "That's a billion dollars";
             color = "white";
             break
           default:
