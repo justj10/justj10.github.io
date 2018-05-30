@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>How Rich is Jay Gatsby</title>
-    <style>canvas{height:1;width:1}</style>
+    <style>canvas{height:3;width:3}</style>
   </head>
   <body>
     <div id="b"></div>
@@ -20,7 +20,7 @@
         c.style.backgroundColor = color;
         body.appendChild(c);
       }
-      if(monies/moneyinc>=10000){
+      if(monies/moneyinc>=1000){
         switch(moneyinc){
           case 1:
             moneyinc = 10;
@@ -32,6 +32,11 @@
             color = "blue";
             break;
           case 100:
+            p.innerHTML = "Purple pixels are 1000 dollars each";
+            moneyinc = 1000;
+            color = "purple";
+            break;
+          case 1000:
             p.innerHTML = "That's a billion dollars";
             color = "white";
             break
