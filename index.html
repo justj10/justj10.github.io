@@ -19,7 +19,7 @@
         c.style.backgroundColor = color;
         body.appendChild(c);
         monies+= moneyinc;
-      if(monies/moneyinc>=1000){
+      if(monies/moneyinc>=10000){
         switch(moneyinc){
           case 1:
             p.innerHTML = "Blue pixels are 10 dollars each";
@@ -32,11 +32,6 @@
             color = "blue";
             break;
           case 100:
-            p.innerHTML = "Purple pixels are 1000 dollars each";
-            moneyinc = 1000;
-            color = "purple";
-            break;
-          case 1000:
             p.innerHTML = "That's a billion dollars";
             color = "white";
             break
