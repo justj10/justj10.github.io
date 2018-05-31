@@ -1,40 +1,47 @@
 <html>
   <head>
     <title>How Rich is Jay Gatsby</title>
-    <style>canvas{height:4;width:4}</style>
+    <style>img{height:30;width:60}</style>
   </head>
   <body>
     <div id="b"></div>
     <p id="p"></p>
     
   <script>
-    let color = "green";
+    let src = "1buck.png";
     let body = document.getElementById('b');
     let p = document.getElementById('p');
-    p.innerHTML = "Each pixel represents $1.";
     let monies = 0;
     let moneyinc = 1;
-    window.setInterval(()=>{
-      for(let i = 0;i<10;i++){
-        let c = document.createElement("canvas");
-        c.style.backgroundColor = color;
+    let g = window.setInterval(()=>{
+      for(let i = 0;i<100;i++){
+        let c = document.createElement("img");
+        c.src = src;
         body.appendChild(c);
-        monies+= moneyinc;}
+        monies+= moneyinc;
+      }
       if(monies/moneyinc>=10000){
         switch(moneyinc){
           case 1:
-            p.innerHTML = "Blue pixels are 10 dollars each";
             moneyinc = 10;
-            color = "lime";
+            src = "10buck.jpg";
             break;
           case 10:
-            p.innerHTML = "Blue pixels are 100 dollars each";
             moneyinc = 100;
-            color = "blue";
+            src = "100buck.png";
             break;
           case 100:
+            moneyinc = 1000;
+            src = "1000buck.jpg";
+            break;
+          case 1000:
+            moneyinc = 10000;
+            src = "10000buck.jpg";
+            break;
+          case 10000:
             p.innerHTML = "That's a billion dollars";
-            color = "white";
+            src = "";
+            window.clearInterval(g);
             break
           default:
             break;
